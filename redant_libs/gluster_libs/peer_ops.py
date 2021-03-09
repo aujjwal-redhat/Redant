@@ -117,7 +117,7 @@ def peer_status():
         pp.pprint(ret)
         RR.rlogger.info(ret)  
 
-        ret['error_code'] = 2
+      
         if ret['error_code'] != 0:
             raise Exception(ret['msg']['opErrstr'])
     
@@ -143,7 +143,7 @@ def pool_list(node):
 
         RR.rlogger.info(ret)
 
-        ret['error_code'] = 2
+ 
         if ret['error_code'] != 0:
             raise Exception(ret['msg']['opErrstr'])
     
